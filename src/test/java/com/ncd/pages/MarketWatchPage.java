@@ -56,7 +56,6 @@ public class MarketWatchPage {
 	}
 
 	public String checkConfirmation() {
-		// ui.click("//i[@class='fa fa-bell-o']");
 		String text = driver.findElement(By.xpath("//div[@id='messageInfo']/ul[@class='ng-scope']/div[1]/li/span"))
 				.getText();
 		return text;

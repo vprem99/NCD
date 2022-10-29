@@ -2,52 +2,52 @@
 <testng-results skipped="0" failed="2" ignored="0" total="11" passed="9">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="550486" started-at="2022-10-29T10:21:39Z" finished-at="2022-10-29T10:30:50Z">
+  <suite name="Default suite" duration-ms="557571" started-at="2022-10-29T10:34:11Z" finished-at="2022-10-29T10:43:29Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="550486" started-at="2022-10-29T10:21:39Z" finished-at="2022-10-29T10:30:50Z">
+    <test name="Default test" duration-ms="557571" started-at="2022-10-29T10:34:11Z" finished-at="2022-10-29T10:43:29Z">
       <class name="com.ncd.tests.NCD">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@43ee72e6]" name="beforeTest" is-config="true" duration-ms="14603" started-at="2022-10-29T10:21:39Z" finished-at="2022-10-29T10:21:54Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@43ee72e6]" name="beforeTest" is-config="true" duration-ms="13291" started-at="2022-10-29T10:34:11Z" finished-at="2022-10-29T10:34:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTitleTest" duration-ms="5901" started-at="2022-10-29T10:21:54Z" finished-at="2022-10-29T10:22:00Z">
+        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTitleTest" duration-ms="2770" started-at="2022-10-29T10:34:25Z" finished-at="2022-10-29T10:34:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="PASS" signature="loginTestBuyer()[pri:2, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTestBuyer" duration-ms="19939" started-at="2022-10-29T10:22:00Z" finished-at="2022-10-29T10:22:20Z">
+        <test-method status="PASS" signature="loginTestBuyer()[pri:2, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTestBuyer" duration-ms="20527" started-at="2022-10-29T10:34:28Z" finished-at="2022-10-29T10:34:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestBuyer -->
-        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@43ee72e6]" name="autionMarket" duration-ms="38074" started-at="2022-10-29T10:22:20Z" finished-at="2022-10-29T10:22:58Z">
+        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@43ee72e6]" name="autionMarket" duration-ms="38111" started-at="2022-10-29T10:34:48Z" finished-at="2022-10-29T10:35:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autionMarket -->
-        <test-method status="PASS" signature="checkStatusBuyer()[pri:4, instance:com.ncd.tests.NCD@43ee72e6]" name="checkStatusBuyer" duration-ms="394934" started-at="2022-10-29T10:22:58Z" finished-at="2022-10-29T10:29:33Z">
+        <test-method status="PASS" signature="checkStatusBuyer()[pri:4, instance:com.ncd.tests.NCD@43ee72e6]" name="checkStatusBuyer" duration-ms="395325" started-at="2022-10-29T10:35:26Z" finished-at="2022-10-29T10:42:02Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusBuyer -->
-        <test-method status="PASS" signature="checkNotificationBuyer()[pri:5, instance:com.ncd.tests.NCD@43ee72e6]" name="checkNotificationBuyer" duration-ms="3302" started-at="2022-10-29T10:29:33Z" finished-at="2022-10-29T10:29:36Z">
+        <test-method status="PASS" signature="checkNotificationBuyer()[pri:5, instance:com.ncd.tests.NCD@43ee72e6]" name="checkNotificationBuyer" duration-ms="3176" started-at="2022-10-29T10:42:02Z" finished-at="2022-10-29T10:42:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNotificationBuyer -->
-        <test-method status="PASS" signature="loginTestSeller()[pri:6, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTestSeller" duration-ms="17936" started-at="2022-10-29T10:29:36Z" finished-at="2022-10-29T10:29:54Z">
+        <test-method status="PASS" signature="loginTestSeller()[pri:6, instance:com.ncd.tests.NCD@43ee72e6]" name="loginTestSeller" duration-ms="18562" started-at="2022-10-29T10:42:05Z" finished-at="2022-10-29T10:42:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTestSeller -->
-        <test-method status="PASS" signature="doBookmark()[pri:7, instance:com.ncd.tests.NCD@43ee72e6]" name="doBookmark" duration-ms="15151" started-at="2022-10-29T10:29:54Z" finished-at="2022-10-29T10:30:09Z">
+        <test-method status="PASS" signature="doBookmark()[pri:7, instance:com.ncd.tests.NCD@43ee72e6]" name="doBookmark" duration-ms="45595" started-at="2022-10-29T10:42:23Z" finished-at="2022-10-29T10:43:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doBookmark -->
-        <test-method status="PASS" signature="checkNotificationSeller()[pri:8, instance:com.ncd.tests.NCD@43ee72e6]" name="checkNotificationSeller" duration-ms="1582" started-at="2022-10-29T10:30:09Z" finished-at="2022-10-29T10:30:11Z">
+        <test-method status="PASS" signature="checkNotificationSeller()[pri:8, instance:com.ncd.tests.NCD@43ee72e6]" name="checkNotificationSeller" duration-ms="1826" started-at="2022-10-29T10:43:09Z" finished-at="2022-10-29T10:43:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkNotificationSeller -->
-        <test-method status="PASS" signature="checkStatusSeller()[pri:9, instance:com.ncd.tests.NCD@43ee72e6]" name="checkStatusSeller" duration-ms="24879" started-at="2022-10-29T10:30:11Z" finished-at="2022-10-29T10:30:36Z">
+        <test-method status="PASS" signature="checkStatusSeller()[pri:9, instance:com.ncd.tests.NCD@43ee72e6]" name="checkStatusSeller" duration-ms="6028" started-at="2022-10-29T10:43:11Z" finished-at="2022-10-29T10:43:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkStatusSeller -->
-        <test-method status="FAIL" signature="checkTradeBook()[pri:10, instance:com.ncd.tests.NCD@43ee72e6]" name="checkTradeBook" duration-ms="1329" started-at="2022-10-29T10:30:36Z" finished-at="2022-10-29T10:30:37Z">
+        <test-method status="FAIL" signature="checkTradeBook()[pri:10, instance:com.ncd.tests.NCD@43ee72e6]" name="checkTradeBook" duration-ms="1328" started-at="2022-10-29T10:43:17Z" finished-at="2022-10-29T10:43:18Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -90,7 +90,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTradeBook -->
-        <test-method status="FAIL" signature="checkMarginBlock()[pri:11, instance:com.ncd.tests.NCD@43ee72e6]" name="checkMarginBlock" duration-ms="5542" started-at="2022-10-29T10:30:37Z" finished-at="2022-10-29T10:30:43Z">
+        <test-method status="FAIL" signature="checkMarginBlock()[pri:11, instance:com.ncd.tests.NCD@43ee72e6]" name="checkMarginBlock" duration-ms="3796" started-at="2022-10-29T10:43:18Z" finished-at="2022-10-29T10:43:22Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -133,7 +133,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkMarginBlock -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@43ee72e6]" name="afterTest" is-config="true" duration-ms="7007" started-at="2022-10-29T10:30:43Z" finished-at="2022-10-29T10:30:50Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@43ee72e6]" name="afterTest" is-config="true" duration-ms="7010" started-at="2022-10-29T10:43:22Z" finished-at="2022-10-29T10:43:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

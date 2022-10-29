@@ -101,7 +101,7 @@ public class NCD extends Base {
 	public void checkMarginBlock() {
 		MarketWatchPage mw = new MarketWatchPage(driver);
 		mw.marginBlockReleaseBookScreenClick();
-		Assert.assertTrue(driver.getCurrentUrl().contains("marginBlockReleaseSummary"));
+		Assert.assertTrue(driver.getCurrentUrl().contains("marginBlockReleaseReport"));
 		new Logout(driver).doLogout();
 	}
 
