@@ -6,8 +6,8 @@
       <class name="com.ncd.tests.NCD">
         <methods>
           <include name="afterTest"/>
+          <include name="doBookmark"/>
           <include name="beforeTest"/>
-          <include name="autionMarket"/>
         </methods>
       </class> <!-- com.ncd.tests.NCD -->
     </classes>

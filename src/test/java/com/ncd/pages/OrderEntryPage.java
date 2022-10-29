@@ -74,44 +74,71 @@ public class OrderEntryPage {
 
 		ui.type("(//input[@name='hour'])[3]", TimeCalculator.getTime(7)[0]);
 		ui.type("(//input[@name='minute'])[3]", TimeCalculator.getTime(7)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[3]");
 			ui.type("(//input[@name='mode'])[3]", "A");
 		}
 
-		ui.type("(//input[@name='hour'])[4]", TimeCalculator.getTime(10)[0]);
-		ui.type("(//input[@name='minute'])[4]", TimeCalculator.getTime(10)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		ui.type("(//input[@name='hour'])[4]", TimeCalculator.getTime(17)[0]);
+		ui.type("(//input[@name='minute'])[4]", TimeCalculator.getTime(17)[1]);
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[4]");
 			ui.type("(//input[@name='mode'])[4]", "A");
 		}
-		ui.type("(//input[@name='hour'])[5]", TimeCalculator.getTime(10)[0]);
-		ui.type("(//input[@name='minute'])[5]", TimeCalculator.getTime(10)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		ui.type("(//input[@name='hour'])[5]", TimeCalculator.getTime(17)[0]);
+		ui.type("(//input[@name='minute'])[5]", TimeCalculator.getTime(17)[1]);
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[5]");
 			ui.type("(//input[@name='mode'])[5]", "A");
 		}
-		ui.type("(//input[@name='hour'])[6]", TimeCalculator.getTime(12)[0]);
-		ui.type("(//input[@name='minute'])[6]", TimeCalculator.getTime(12)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		ui.type("(//input[@name='hour'])[6]", TimeCalculator.getTime(19)[0]);
+		ui.type("(//input[@name='minute'])[6]", TimeCalculator.getTime(19)[1]);
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[6]");
 			ui.type("(//input[@name='mode'])[6]", "A");
 		}
-		ui.type("(//input[@name='hour'])[7]", TimeCalculator.getTime(12)[0]);
-		ui.type("(//input[@name='minute'])[7]", TimeCalculator.getTime(12)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		ui.type("(//input[@name='hour'])[7]", TimeCalculator.getTime(19)[0]);
+		ui.type("(//input[@name='minute'])[7]", TimeCalculator.getTime(19)[1]);
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[7]");
 			ui.type("(//input[@name='mode'])[7]", "A");
 		}
-		ui.type("(//input[@name='hour'])[8]", TimeCalculator.getTime(14)[0]);
-		ui.type("(//input[@name='minute'])[8]", TimeCalculator.getTime(14)[1]);
-		if (Integer.parseInt(TimeCalculator.getTime(7)[0]) < 12) {
+		ui.type("(//input[@name='hour'])[8]", TimeCalculator.getTime(25)[0]);
+		ui.type("(//input[@name='minute'])[8]", TimeCalculator.getTime(25)[1]);
+		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[8]");
 
 			ui.type("(//input[@name='mode'])[8]", "A");
 		}
 		ui.click("//button[text()='Confirm ']");
 		ui.click("//button[text()='confirm']");
+	}
+
+	public String checkOrder() {
+		String txt=null;
+		ui.click("//a[@data-click='sidebar-minify']/i");
+		ui.click(By.linkText("Order Book"));
+		for (int i = 1; i <= 10; i++) {
+			 txt = driver.findElement(By.xpath("//div[@class='ui-grid-canvas']/div[1]/div/div[9]")).getText();
+			if (txt.equals("OPEN-OPEN")) {
+				break;
+			} else {
+				try {
+					System.out.println("Waiting for OPEN-OPEN");
+					Thread.sleep(120000);
+				} catch (InterruptedException e) {
+
+				}
+				driver.get(driver.getCurrentUrl());
+			}
+		}
+		return txt;
+	}
+
+	public String checkNotification() {
+		ui.click("//i[@class='fa fa-bell-o']");
+		String style=driver.findElement(By.xpath("//div[@id='messageInfo']/ul[@class='ng-scope']/div[1]/li/span")).getAttribute("style");
+		return style;
 	}
 
 }

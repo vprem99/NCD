@@ -22,16 +22,22 @@ public class TimeCalculator {
 
 		String hr2 = Integer.toString(hr);
 		String mm2 = Integer.toString(mm);
-		if(hr2.length()==1)
-			hr2="0"+hr2;
-		if(mm2.length()==1)
-			mm2="0"+mm2;
+		if (hr2.length() == 1)
+			hr2 = "0" + hr2;
+		if (mm2.length() == 1)
+			mm2 = "0" + mm2;
 		String t[] = { hr2, mm2 };
 		return t;
 
 	}
 
+	public static int checkTime() {
+		Date d = new Date();
+		String time = d.toString().split(" ")[3].split(":")[0];
+		return Integer.parseInt(time);
+	}
+
 	public static void main(String[] args) {
-		System.out.println(getTime(7)[0]+" "+getTime(7)[1]);
+		checkTime();
 	}
 }

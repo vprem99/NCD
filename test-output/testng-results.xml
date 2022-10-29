@@ -1,29 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="83527" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:01:57Z">
+  <suite name="Default suite" duration-ms="486179" started-at="2022-10-29T07:46:25Z" finished-at="2022-10-29T07:54:31Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="83527" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:01:57Z">
+    <test name="Default test" duration-ms="486179" started-at="2022-10-29T07:46:25Z" finished-at="2022-10-29T07:54:31Z">
       <class name="com.ncd.tests.NCD">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="beforeTest" is-config="true" duration-ms="13718" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:00:47Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="beforeTest" is-config="true" duration-ms="13159" started-at="2022-10-29T07:46:25Z" finished-at="2022-10-29T07:46:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTitleTest" duration-ms="3184" started-at="2022-10-29T06:00:47Z" finished-at="2022-10-29T06:00:50Z">
+        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTitleTest" duration-ms="2938" started-at="2022-10-29T07:46:38Z" finished-at="2022-10-29T07:46:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTest" duration-ms="4537" started-at="2022-10-29T06:00:50Z" finished-at="2022-10-29T06:00:55Z">
+        <test-method status="PASS" signature="loginTestBuyer()[pri:2, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTestBuyer" duration-ms="3959" started-at="2022-10-29T07:46:41Z" finished-at="2022-10-29T07:46:45Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@7f1302d6]" name="autionMarket" duration-ms="53051" started-at="2022-10-29T06:00:55Z" finished-at="2022-10-29T06:01:48Z">
+        </test-method> <!-- loginTestBuyer -->
+        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@7f1302d6]" name="autionMarket" duration-ms="45373" started-at="2022-10-29T07:46:45Z" finished-at="2022-10-29T07:47:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autionMarket -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="afterTest" is-config="true" duration-ms="8919" started-at="2022-10-29T06:01:48Z" finished-at="2022-10-29T06:01:57Z">
+        <test-method status="PASS" signature="checkStatus()[pri:4, instance:com.ncd.tests.NCD@7f1302d6]" name="checkStatus" duration-ms="391977" started-at="2022-10-29T07:47:31Z" finished-at="2022-10-29T07:54:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkStatus -->
+        <test-method status="PASS" signature="checkNotification()[pri:5, instance:com.ncd.tests.NCD@7f1302d6]" name="checkNotification" duration-ms="2589" started-at="2022-10-29T07:54:03Z" finished-at="2022-10-29T07:54:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkNotification -->
+        <test-method status="PASS" signature="loginTestSeller()[pri:6, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTestSeller" duration-ms="18140" started-at="2022-10-29T07:54:05Z" finished-at="2022-10-29T07:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTestSeller -->
+        <test-method status="PASS" signature="doBookmark()[pri:7, instance:com.ncd.tests.NCD@7f1302d6]" name="doBookmark" duration-ms="855" started-at="2022-10-29T07:54:24Z" finished-at="2022-10-29T07:54:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doBookmark -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="afterTest" is-config="true" duration-ms="7003" started-at="2022-10-29T07:54:24Z" finished-at="2022-10-29T07:54:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

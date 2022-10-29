@@ -34,7 +34,7 @@ public class Base {
 	@AfterTest // post-condtion i.e browser closing at the End
 	public void afterTest() throws Exception {
 		Thread.sleep(7000);
-		driver.quit();
+		//driver.quit();
 	}
 
 }
