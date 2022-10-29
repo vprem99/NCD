@@ -47,29 +47,62 @@ public class NCD extends Base {
 	}
 
 	@Test(priority = 4)
-	public void checkStatus() throws Exception {
+	public void checkStatusBuyer() throws Exception {
 		OrderEntryPage order = new OrderEntryPage(driver);
 		String status = order.checkOrder();
 		Assert.assertEquals(status, "OPEN-OPEN");
 	}
+
 	@Test(priority = 5)
-	public void checkNotification() throws Exception {
+	public void checkNotificationBuyer() throws Exception {
 		OrderEntryPage order = new OrderEntryPage(driver);
 		String color = order.checkNotification();
 		Assert.assertEquals(color, "color: green;");
 		new Logout(driver).doLogout();
-	} 
+	}
+
 	@Test(priority = 6)
 	public void loginTestSeller() {
 		driver.get(prop.getProperty("url"));
 		LoginPage lp = new LoginPage(driver);
 		lp.doLogin(prop.getProperty("seller_user"), prop.getProperty("seller_password"));
 	}
-	
+
 	@Test(priority = 7)
 	public void doBookmark() {
 		MarketWatchPage mw = new MarketWatchPage(driver);
 		mw.doBookmark();
+	}
+
+	@Test(priority = 8)
+	public void checkNotificationSeller() {
+		MarketWatchPage mw = new MarketWatchPage(driver);
+		String color = mw.checkNotification();
+		Assert.assertEquals(color, "color: green;");
+		String text = mw.checkConfirmation();
+		Assert.assertTrue(text.contains("NEW BID CONFIRMATION"));
+	}
+
+	@Test(priority = 9)
+	public void checkStatusSeller() {
+		MarketWatchPage mw = new MarketWatchPage(driver);
+		String status = mw.checkOrder();
+		Assert.assertEquals(status, "OPEN-OPEN");
+	}
+
+	@Test(priority = 10)
+	public void checkTradeBook() {
+		MarketWatchPage mw = new MarketWatchPage(driver);
+		mw.tradeBookClick();
+		Assert.assertTrue(driver.getCurrentUrl().contains("tradeBook"));
+	}
+
+	@Test(priority = 11)
+	public void checkMarginBlock() {
+		MarketWatchPage mw = new MarketWatchPage(driver);
+		mw.marginBlockReleaseBookScreenClick();
+		Assert.assertTrue(driver.getCurrentUrl().contains("marginBlockReleaseSummary"));
+		new Logout(driver).doLogout();
 	}
 
 }

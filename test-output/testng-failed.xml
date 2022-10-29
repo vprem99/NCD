@@ -6,7 +6,8 @@
       <class name="com.ncd.tests.NCD">
         <methods>
           <include name="afterTest"/>
-          <include name="doBookmark"/>
+          <include name="checkMarginBlock"/>
+          <include name="checkTradeBook"/>
           <include name="beforeTest"/>
         </methods>
       </class> <!-- com.ncd.tests.NCD -->
