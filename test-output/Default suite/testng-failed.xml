@@ -6,9 +6,7 @@
       <class name="com.ncd.tests.NCD">
         <methods>
           <include name="afterTest"/>
-          <include name="loginTitleTest"/>
           <include name="beforeTest"/>
-          <include name="loginTest"/>
           <include name="autionMarket"/>
         </methods>
       </class> <!-- com.ncd.tests.NCD -->

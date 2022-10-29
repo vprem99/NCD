@@ -27,8 +27,8 @@ public class LoginPage {
 	
 	
 	public void doLogin(String user, String pwd) {
-		ui.type("", user);
-		ui.type("", pwd);
+		ui.type(e_user, user);
+		ui.type(e_pwd, pwd);
 
 		wt.until(ExpectedConditions.elementToBeClickable(e_login)).click();
 		try {

@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="76162" started-at="2022-10-29T04:37:17Z" finished-at="2022-10-29T04:38:33Z">
+  <suite name="Default suite" duration-ms="83527" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:01:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="76162" started-at="2022-10-29T04:37:17Z" finished-at="2022-10-29T04:38:33Z">
+    <test name="Default test" duration-ms="83527" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:01:57Z">
       <class name="com.ncd.tests.NCD">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="beforeTest" is-config="true" duration-ms="13629" started-at="2022-10-29T04:37:17Z" finished-at="2022-10-29T04:37:31Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="beforeTest" is-config="true" duration-ms="13718" started-at="2022-10-29T06:00:33Z" finished-at="2022-10-29T06:00:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTitleTest" duration-ms="3339" started-at="2022-10-29T04:37:31Z" finished-at="2022-10-29T04:37:34Z">
+        <test-method status="PASS" signature="loginTitleTest()[pri:1, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTitleTest" duration-ms="3184" started-at="2022-10-29T06:00:47Z" finished-at="2022-10-29T06:00:50Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTitleTest -->
-        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTest" duration-ms="4319" started-at="2022-10-29T04:37:34Z" finished-at="2022-10-29T04:37:38Z">
+        <test-method status="PASS" signature="loginTest()[pri:2, instance:com.ncd.tests.NCD@7f1302d6]" name="loginTest" duration-ms="4537" started-at="2022-10-29T06:00:50Z" finished-at="2022-10-29T06:00:55Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@7f1302d6]" name="autionMarket" duration-ms="45428" started-at="2022-10-29T04:37:38Z" finished-at="2022-10-29T04:38:24Z">
+        <test-method status="PASS" signature="autionMarket()[pri:3, instance:com.ncd.tests.NCD@7f1302d6]" name="autionMarket" duration-ms="53051" started-at="2022-10-29T06:00:55Z" finished-at="2022-10-29T06:01:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- autionMarket -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="afterTest" is-config="true" duration-ms="9301" started-at="2022-10-29T04:38:24Z" finished-at="2022-10-29T04:38:33Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.ncd.tests.NCD@7f1302d6]" name="afterTest" is-config="true" duration-ms="8919" started-at="2022-10-29T06:01:48Z" finished-at="2022-10-29T06:01:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
