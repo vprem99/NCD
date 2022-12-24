@@ -10,7 +10,6 @@ public class TimeCalculator {
 		int hr = Integer.parseInt(time.split(":")[0]);
 		int mm = Integer.parseInt(time.split(":")[1]);
 		// int mm = 59;
-
 		mm = mm + incrementValue;
 		if (hr > 12) {
 			hr = hr - 12;
@@ -37,7 +36,25 @@ public class TimeCalculator {
 		return Integer.parseInt(time);
 	}
 
-	public static void main(String[] args) {
-		checkTime();
+	
+	public static int timeDifference(String startTime)
+	{
+		Date d = new Date();
+		String time = d.toString().split(" ")[3];
+		int hr = Integer.parseInt(time.split(":")[0]);
+		int mm = Integer.parseInt(time.split(":")[1]);
+		
+		int sMinute=Integer.parseInt(startTime.split(":")[1]);
+		
+		
+		return sMinute-mm;	
 	}
+	public static void main(String[] args) {
+		System.out.println(checkTime());
+		System.out.println(getTime(13)[0]);
+		System.out.println(getTime(13)[1]);
+
+	}
+	
+	
 }

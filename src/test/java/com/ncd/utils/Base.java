@@ -27,8 +27,8 @@ public class Base {
 		System.setProperty("webdriver.chrome.driver", "src/test/resources/drivers/chromedriver.exe");
 		driver = new ChromeDriver(op);
 		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10)); // Will wait whenever required
-		wt = new WebDriverWait(driver, Duration.ofSeconds(10));
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20)); // Will wait whenever required
+		wt = new WebDriverWait(driver, Duration.ofSeconds(20));
 	}
 
 	@AfterTest // post-condtion i.e browser closing at the End

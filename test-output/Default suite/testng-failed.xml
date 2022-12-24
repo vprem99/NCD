@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ncd.tests.NCD">
+      <class name="com.posttrade.tests.TradeMappingTest">
         <methods>
           <include name="afterTest"/>
-          <include name="checkMarginBlock"/>
-          <include name="checkTradeBook"/>
+          <include name="tradeSearchTest"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- com.ncd.tests.NCD -->
+      </class> <!-- com.posttrade.tests.TradeMappingTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

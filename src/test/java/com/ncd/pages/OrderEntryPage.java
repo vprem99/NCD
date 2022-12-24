@@ -72,8 +72,8 @@ public class OrderEntryPage {
 
 		ui.click("//button[@value='Submit']");
 
-		ui.type("(//input[@name='hour'])[3]", TimeCalculator.getTime(7)[0]);
-		ui.type("(//input[@name='minute'])[3]", TimeCalculator.getTime(7)[1]);
+		ui.type("(//input[@name='hour'])[3]", TimeCalculator.getTime(10)[0]);
+		ui.type("(//input[@name='minute'])[3]", TimeCalculator.getTime(10)[1]);
 		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[3]");
 			ui.type("(//input[@name='mode'])[3]", "A");
@@ -103,8 +103,8 @@ public class OrderEntryPage {
 			ui.click("(//input[@name='mode'])[7]");
 			ui.type("(//input[@name='mode'])[7]", "A");
 		}
-		ui.type("(//input[@name='hour'])[8]", TimeCalculator.getTime(25)[0]);
-		ui.type("(//input[@name='minute'])[8]", TimeCalculator.getTime(25)[1]);
+		ui.type("(//input[@name='hour'])[8]", TimeCalculator.getTime(22)[0]);
+		ui.type("(//input[@name='minute'])[8]", TimeCalculator.getTime(22)[1]);
 		if (TimeCalculator.checkTime() < 12) {
 			ui.click("(//input[@name='mode'])[8]");
 
@@ -116,7 +116,7 @@ public class OrderEntryPage {
 
 	public String checkOrder() {
 		String txt=null;
-		ui.click("//a[@data-click='sidebar-minify']/i");
+		//ui.click("//a[@data-click='sidebar-minify']/i");
 		ui.click(By.linkText("Order Book"));
 		for (int i = 1; i <= 10; i++) {
 			 txt = driver.findElement(By.xpath("//div[@class='ui-grid-canvas']/div[1]/div/div[9]")).getText();

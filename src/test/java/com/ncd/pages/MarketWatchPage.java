@@ -3,10 +3,12 @@ package com.ncd.pages;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.ncd.utils.TimeCalculator;
 import com.ncd.utils.UiOperations;
 
 public class MarketWatchPage {
@@ -26,6 +28,9 @@ public class MarketWatchPage {
 	public void doBookmark() {
 		ui.click(e_autionMarket);
 		ui.click(e_marketWatch);
+
+		new WebDriverWait(driver, Duration.ofSeconds(300))
+				.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//strong[text()='Time Left | ']")));
 		ui.click("(//button[@ng-model='data.bookmark'])[1]");
 		ui.click("//strong[text()='Actions']");
 		ui.click("//strong[text()='Auction Floor']");
@@ -40,8 +45,11 @@ public class MarketWatchPage {
 
 	public String checkOrder() {
 		String txt = null;
-		//ui.click("//a[@data-click='sidebar-minify']/i");
+
+		ui.click("//a[@data-click='sidebar-minify']/i");
+		
 		ui.click(By.linkText("Order Book"));
+
 		txt = driver.findElement(By.xpath("//div[@class='ui-grid-canvas']/div[1]/div/div[9]")).getText();
 
 		return txt;
@@ -63,13 +71,14 @@ public class MarketWatchPage {
 
 	public void tradeBookClick() {
 		ui.click("//a[@data-click='sidebar-minify']/i");
-		driver.findElement(By.xpath("(//a[text()='Trade Book'])[4]")).click();
+		ui.click(By.xpath("(//a[text()='Trade Book'])[4]"));
+		// driver.findElement(By.xpath("(//a[text()='Trade Book'])[4]")).click();
 
 	}
 
 	public void marginBlockReleaseBookScreenClick() {
 		ui.click("//a[@data-click='sidebar-minify']/i");
-		driver.findElement(By.xpath("(//a[text()='Margin Block Release Report'])[4]")).click();
+		ui.click(By.xpath("(//a[text()='Margin Block Release Report'])[4]"));
 
 	}
 
